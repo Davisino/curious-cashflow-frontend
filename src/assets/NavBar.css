@@ -1,0 +1,37 @@
+/* NavBar.css */
+.container-navbar > div > h2{
+  padding: 10px;
+  max-width: 100%;
+}
+.navbar {
+  padding: 0 10px;
+  }
+.navbar h2 {
+  cursor: pointer;
+}
+.container-logout {
+  padding-left: 15px;
+}
+.navbar h2:hover {
+  background-color: aliceblue;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+
+  }
+  .container-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-logout {
+    padding-left: 0px;
+  }
+  .container-navbar > div > h2{
+    padding: 5px;
+    max-width: 100%;
+  }
+}

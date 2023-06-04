@@ -1,0 +1,49 @@
+/* JobCard.css */
+.jobs-container {
+  display: inline;
+}
+.job-card {
+    display: grid;
+    grid-template-columns: 1fr 4fr 20fr 2fr;
+    padding-left: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    overflow:auto;
+  }
+
+  .job-card div {
+    height: 40px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+  .job-card div p {
+    font-size: 1.1rem;
+    overflow: scroll;
+  }
+
+  .modal  p {
+    font-size:1rem;
+    font-weight: 300;
+  }
+.modal span {
+  font-weight: 600;
+  font-size: 1rem;
+  color: rgb(47, 44, 44)
+}
+.modal h3 {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+  .job-card {
+    width: 100%;
+    overflow:auto;
+
+  }
+  .jobs-container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,61 @@
+.profit-container {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+  .profit-card {
+    width: 150px;
+    padding: 50px;
+    margin: 20px 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  .profit-title {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .profit-amount {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  .yearly {
+    background-color: #f44336;
+  }
+  
+  .monthly {
+    background-color: #2196f3;
+  }
+  
+  .weekly {
+    
+    background-color: #4caf50;
+  }
+  
+  .daily {
+    background-color: #ff9800;
+  }
+  
+  @media screen and (max-width: 767px) {
+ 
+    .profit-title {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    .profit-container {
+        display: block;
+    }
+    .profit-card {
+        width: 100%;
+        padding: 50px 0;
+        margin: 40px 0;
+    }
+    .profit-amount {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+  }

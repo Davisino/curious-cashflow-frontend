@@ -1,0 +1,22 @@
+.account-container {
+    margin: 0 auto;
+}
+.field-data {
+ margin-top: 10px;
+ margin-left: 5px;
+}
+.update-field  {
+    margin-left: 5px;
+}
+.row-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+    .row-field {
+        display: inline-block;
+ 
+    }
+}
