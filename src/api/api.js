@@ -25,6 +25,11 @@ export async function createJob(data) {
 export const handleDeleteJob = async (jobId) => {
   const response = await fetch(`${process.REACT_APP_SERVER_URL}/job/${jobId}`, {
     method: "DELETE",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: "Bearer " + localStorage.getItem("token"),
+    },
+    credentials: "include",
   });
 
   if (!response.ok) {
