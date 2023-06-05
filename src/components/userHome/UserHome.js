@@ -64,7 +64,7 @@ export const UserHome = () => {
 
   useEffect(() => {
     fetchJobs();
-  }, []);
+  });
 
   const handleJobDelete = async (id) => {
     try {
