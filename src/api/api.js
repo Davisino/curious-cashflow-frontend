@@ -23,7 +23,9 @@ export async function createJob(data) {
 }
 
 export const handleDeleteJob = async (jobId) => {
-  const response = await fetch(`/job/${jobId}`, { method: "DELETE" });
+  const response = await fetch(`${process.REACT_APP_SERVER_URL}/job/${jobId}`, {
+    method: "DELETE",
+  });
 
   if (!response.ok) {
     // Handle error
