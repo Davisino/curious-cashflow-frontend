@@ -62,9 +62,12 @@ export const LogInForm = () => {
           Login
         </button>
         Don't have an account?{" "}
-        <a href="#" onClick={handleRegisterPage}>
+        <span
+          style={{ borderBottom: "solid 2px blue" }}
+          onClick={handleRegisterPage}
+        >
           Register!
-        </a>
+        </span>
       </form>
     </div>
   );

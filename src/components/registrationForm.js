@@ -72,9 +72,12 @@ export const RegistrationForm = () => {
           Register
         </button>
         Have already an account?{" "}
-        <a href="#" onClick={handleLoginRedirect}>
+        <span
+          style={{ borderBottom: "solid 2px" }}
+          onClick={handleLoginRedirect}
+        >
           Login
-        </a>
+        </span>
       </form>
     </div>
   );
