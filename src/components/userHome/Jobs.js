@@ -45,10 +45,14 @@ export const Jobs = ({
           </button>
           {showOptions && (
             <div className="dropdown-content">
-              <a onClick={() => handleSort("Ascending")}>Ascending (Price)</a>
-              <a onClick={() => handleSort("Descending")}>Descending (Price)</a>
-              <a onClick={() => handleSort("Latest")}>Latest (Date)</a>
-              <a onClick={() => handleSort("Newest")}>Newest (Date)</a>
+              <span onClick={() => handleSort("Ascending")}>
+                Ascending (Price)
+              </span>
+              <span onClick={() => handleSort("Descending")}>
+                Descending (Price)
+              </span>
+              <span onClick={() => handleSort("Latest")}>Latest (Date)</span>
+              <span onClick={() => handleSort("Newest")}>Newest (Date)</span>
             </div>
           )}
         </div>
