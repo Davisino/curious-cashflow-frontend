@@ -41,7 +41,7 @@ export const UserHome = () => {
           });
       }
     }
-  }, []); // Add an empty array here
+  }); // Add an empty array here
 
   const fetchJobs = () => {
     fetch(`${process.env.REACT_APP_SERVER_URL}/api/jobs`, {
